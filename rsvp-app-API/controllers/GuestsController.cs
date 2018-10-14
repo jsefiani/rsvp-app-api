@@ -50,7 +50,7 @@ namespace rsvpappAPI.controllers
         /// <returns>The guest.</returns>
         /// <param name="guest">Guest.</param>
         [HttpPost()]
-        public IActionResult AddGuest([FromBody] GuestForUpdateDto guest)
+        public IActionResult AddGuest([FromBody] GuestForCreationDto guest)
         {
             if(guest.Name == null) 
             {
